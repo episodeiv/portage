@@ -14,14 +14,8 @@ SRC_URI=""
 EGIT_REPO_URI="git://github.com/Fruneau/pfixtools.git"
 EGIT_HAS_SUBMODULES="yes"
 
-
-# License of the package.  This must match the name of file(s) in
-# /usr/portage/licenses/.  For complex license combination see the developer
-# docs on gentoo.org for details.
-LICENSE=""
-
+LICENSE="BSD"
 SLOT="0"
-
 KEYWORDS="~x86"
 
 RDEPEND="dev-libs/libev
