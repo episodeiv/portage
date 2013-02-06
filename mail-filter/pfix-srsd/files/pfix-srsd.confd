@@ -1,0 +1,5 @@
+DOMAIN=mydomain.com
+SECRETSFILE=/etc/postfix/srs.secrets
+PIDFILE=/var/run/pfix-srsd.pid
+
+OPTS=

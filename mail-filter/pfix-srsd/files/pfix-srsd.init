@@ -1,0 +1,16 @@
+#!/sbin/runscript
+
+command="/usr/sbin/pfix-srsd"
+
+start() {
+        ebegin "Starting ${SVCNAME}"
+        start-stop-daemon \
+                --start \
+                --exec ${command} \
+                --pidfile ${PIDFILE} \
+                -- \
+                        -p ${PIDFILE} \
+                        ${OPTS} \
+                        ${DOMAIN} \
+                        ${SECRETSFILE}
+}
